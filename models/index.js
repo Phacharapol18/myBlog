@@ -1,4 +1,4 @@
-const User = require("./user1");
+const User = require("./User");
 const Blog = require("./Blog");
 
 User.hasMany(Blog);
