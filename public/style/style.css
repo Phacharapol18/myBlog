@@ -1,0 +1,46 @@
+* {
+    font-family: 'Cabin', sans-serif;
+}
+a{
+    margin: 0 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navbar, .card-header{
+    background-color: #43919B;
+}
+.card{
+    margin: 0 25px;
+}
+.cardBlog{
+    margin: 20px 25px;
+}
+.welcome{
+    text-align: center;
+    font-weight: 700;
+}
+.form-label{
+    font-size: 1.25rem;
+}
+.loginCard{
+    margin: 50px 25%;
+}
+.head {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.bigHeader {
+    font-size: 3.5rem;
+    padding: 35px;
+}
+
+@media (min-width:576px) and (max-width:1086px) {
+    .loginCard{
+        margin: 50px 2%;
+    }
+}

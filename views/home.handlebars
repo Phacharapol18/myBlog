@@ -1,0 +1,11 @@
+<h1 class="bigHeader">Community Home Page</h1>
+
+{{#each blogs}}
+<div class="card cardBlog animate__animated animate__fadeInTopLeft">
+  <h5 class="card-header">{{time}}</h5>
+  <div class="card-body">
+    <h3 class="card-title">{{title}}</h3>
+    <p class="card-text">{{body}}</p>
+ </div>
+</div>
+{{/each}}

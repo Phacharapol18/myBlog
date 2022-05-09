@@ -1,0 +1,30 @@
+<h1 class="welcome">Welcome Back {{username}}</h1>
+<h2>All your blogs:</h2>
+<div class="card">
+<form action="" id="newBlog">
+    <div class="card-body mb-3">
+  <label for="title" class="form-label">Your Blog title</label>
+  <input type="text" class="form-control" id="title" placeholder="title">
+</div>
+<div class=" card-body mb-3">
+  <label for="body" class="form-label">Blog Content</label>
+  <textarea class="form-control" id="body" cols="30" rows="3"></textarea>
+</div>
+<div class="card-body">
+<button class="btn btn-primary">Submit</button>
+</div>
+</form>
+</div>
+{{#each Blogs}}
+   <div class="card cardBlog animate__animated animate__fadeInTopLeft">
+  <h5 class="card-header">{{time}}</h5>
+  <div class="card-body">
+    <h3 class="card-title">{{title}}</h3>
+    <p class="card-text">{{body}}</p>
+     <button class="btn del btn-danger" data-Blog={{id}}>delete</button>
+ </div>
+</div>
+ 
+{{/each}}
+
+<script src="/js/profile.js"></script>
